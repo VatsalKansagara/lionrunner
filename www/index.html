@@ -128,9 +128,9 @@ h2{margin:0 0 10px;font-size:40px;color:#ffd24a}
    NEVER click your own real ads - Google can ban the account.
    The AdMob *App ID* is NOT written here, it goes in AndroidManifest.xml. */
 const ADCFG = {
-  TEST_MODE: true,
-  rewarded:     { test: 'ca-app-pub-3940256099942544/5224354917', real: 'ca-app-pub-XXXXXXXXXXXXXXXX/YYYYYYYYYY' },
-  interstitial: { test: 'ca-app-pub-3940256099942544/1033173712', real: 'ca-app-pub-XXXXXXXXXXXXXXXX/ZZZZZZZZZZ' },
+  TEST_MODE: false,
+  rewarded:     { test: 'ca-app-pub-3940256099942544/5224354917', real: 'ca-app-pub-1839550672846701/9114123901' },
+  interstitial: { test: 'ca-app-pub-3940256099942544/1033173712', real: 'ca-app-pub-1839550672846701/4983307203' },
   INTERSTITIAL_EVERY: 3   // show a full-screen ad after every 3rd run
 };
 const adId = k => ADCFG.TEST_MODE ? ADCFG[k].test : ADCFG[k].real;
